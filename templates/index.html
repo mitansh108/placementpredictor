@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Placement Predictor</title>
+    <style>
+        /* Global Styles */
+        body {
+            background: url('https://www.simplilearn.com/ice9/free_resources_article_thumb/Up-skilling-Drives-Value-in-the-Corporate.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(2, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+
+        /* Form */
+        form {
+            background-color: rgba(0, 0, 5, 0.7);
+            border-radius: 2px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            margin: 230px auto;
+            max-width: 590px;
+            padding: 40px;
+            width: 90%;
+            text-align: left;
+        }
+
+        label {
+            color: #fff;
+            display: block;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"] {
+            background-color: #444;
+            border: none;
+            border-radius: 4px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            color: #fff;
+            display: block;
+            font-size: 16px;
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            background-color: #ff6b6b;
+            border: none;
+            border-radius: 4px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            color: #fff;
+            cursor: pointer;
+            display: block;
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 20px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: background-color 0.2s ease;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ff5255;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 600px) {
+            form {
+                padding: 20px;
+            }
+
+            input[type="text"] {
+                margin-bottom: 10px;
+            }
+
+            input[type="submit"] {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PLACEMENT PREDICTOR</h1>
+    </header>
+
+    <form method="post" action="/predict">
+        <label>CGPA</label>
+        <input type="text" name="CGPA">
+
+        <label>IQ</label>
+        <input type="text" name="IQ">
+
+        <label>Profile Score</label>
+        <input type="text" name="Profile_score">
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
